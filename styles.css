@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding : 0;
+}
+body {
+    font-family: arail, sans-serif;
+    background-color: #f0f0f0;
+    color:#333;
+}
+header {
+    background: #1a1a2e;
+    padding:16px 32px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav a:hover{
+    color:#f4a261;
+}
+section{ 
+    padding: 60px 32px;
+}
+h1{
+    font-size: 48 px;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: #1a2a2e;
+}
+ul{
+    padding-left: 20px;
+}
+li{
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+input, textarea{
+    display:block;
+    width:100%;
+    max-width: 400px;
+    padding:12px;
+    margin-bottom: 12px;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16;
+}
+button{
+    background: #1a1a2e;
+    color: white;
+    padding: 12px 28px; 
+    border:none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background: #f4a261;
+}
+footer{
+    background: #1a1a2e;
+    color: white;
+    text-align:center;
+    padding: 20px;
+}
+#about{
+    background: #1a1a2e;
+    color:white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+}
+#about h1{
+    color:white;
+    font-size: 56px;
+    margin-bottom: 16px;
+}
+#about p{
+    font-size: 20px;
+    color:#aaa;
+    margin-bottom: 32px;
+}
+#about a{
+    display: inline-block;
+    background: #f4a261;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+}
+#about a:hover{
+    background: #e08040;
+}
+#skills{
+    background: #f8f8f8;
+    padding: 80px 60px;
+}
+#skills ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 16px ;
+    flex-wrap: wrap;
+}
+#skills li{
+    background: #1a1a2e;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+#contact{
+    background: white;
+    padding: 80px 60px;
+}
+input, textarea{
+    border:2px solid #e0e0e0;
+    transition: border-color 0.2s;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border-color: #f4a261;
+}
+textarea{
+    height: 120px;
+    resize: vertical;
+}
+header{
+    position: sticky;
+    top:0;
+    z-index: 1000;
+}
+@media(max-width: 768px){
+    #about{
+        padding:0 24px;
+    }
+    #about h1{
+        font-size: 36px;
+    }
+    #about p{
+        font-size:16px;
+    }
+    #skills {
+        padding: 60px 24px;
+    }
+    #skills ul{
+        gap:10px;
+    }
+    #contact{
+        padding: 60px 24px;
+    }
+    nav a{
+        margin-right:12 px;
+        font-size:14px;
+    }
+
+}
+
